@@ -11,7 +11,7 @@ function clear() {
     }
 }
 
-function add() {
+window.add = function() {
     const listContainer = document.getElementById('list');
 
     const item = document.createElement('div');
