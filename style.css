@@ -1,7 +1,6 @@
 body
 {
 background-image: url(images/background.png);
-justify-content: center;
 background-repeat: repeat-x;
 animation: slide 20s linear infinite;
 }
@@ -23,10 +22,10 @@ background-position: 0% 0%;
 
 
 
-#soneczko
+#gif
 {
 padding: 10px;
-height: 250px;
+height: 150px;
 width: 250px;
 float: left;
 }
@@ -34,22 +33,41 @@ float: left;
 #soundcloud
 {
 width: 30%;
-height: 200px;
+height: 150px;
 float: left;
 padding: 10px;
 margin-left: auto;
 
 }
 
-/* 
- * This file contains the styles for the hgxxqua.github.io website.
- * It includes font settings, layout adjustments, and other visual elements.
- */
-
 
 .montserrat {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-  }
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#text-link
+{
+color: white;
+text-decoration-line: none;
+}
+
+#todolist {
+  background-color: rgba(55, 55, 55, 0.2);
+  height: 300px;
+  width: 650px;
+  margin: 10px;
+  margin-top: 150px;
+  text-align: center;
+  -webkit-backdrop-filter: blur(4px);
+  
+}
