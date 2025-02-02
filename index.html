@@ -2,44 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <title>Document</title>
-    <script>src="main.js"</script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css" media="(max-width: 600px)">
+    <script src="scr.js"></script>
+    <script src="https://kit.fontawesome.com/9dd5cfb356.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
-<div>
-    <img id="gif" src="images/anime.gif" alt="anime gif idknw">
-    <iframe id="soundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/235362948&color=%234bb2d7&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/blackkraymusic" title="BLACK KRAY MUSIC" target="_blank" style="color: #cccccc; text-decoration: none;"></a><a href="https://soundcloud.com/blackkraymusic/hood-angels" title="HOOD ANGELS" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
-</div>
-<br>
-<br>
-<div id="todolist">
-<div id="listContainer">
-    <a class="roboto-mono" id="text-link" href="https://hgxxqua.github.io/mylist.github.io">To Do List (click and open a website)</a> 
-    <div id="list">
-
-
+<body style="margin:0;padding:0">
+    <div id="header">
+        <a id="nick">lightofdegenerates</a>
     </div>
-    <div class="roboto-mono" id="buttons-main">
-        <button id="add" onclick="add()">Add</button>
-        <button id="clear" onclick="clear()">Clear</button>
+
+    <div id="main">
+        <!-- Левый блок -->
+        <div id="left">
+            <div class="scroll-container">
+                <p id="text-left">Just scroll</p>
+                <div class="card">
+                    <div class="card-card">
+                        <img src="images/alchimil.jpg" alt="Стальной Алхимик" class="card-img">
+                        <div class="card-text">
+                            <h3>Some about me)</h3>
+                            <p>I study at a Polish technical school, majoring in programming.
+                                I can work with both front-end and databases.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правый блок -->
+        <div id="right-container" >
+            <p style="text-align: center; font-size: xx-large;">My Works -> <a href="https://github.com/hgxxqua">My Github <i class="fa-brands fa-github fa-fade"></i></a></p>
+            <div class="r-card">
+                <a href="https://hgxxqua.github.io/mylist.github.io/"><img src="images/todolist.png" alt="todolist" class="r-card-img" ></a>
+                <div class="r-card-text">
+                    <h3>My TodoList</h3>
+                    <p><a href="https://hgxxqua.github.io/mylist.github.io/">Simple todo list on JS</a></p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
 </body>
 </html>

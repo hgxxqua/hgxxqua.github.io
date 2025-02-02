@@ -1,0 +1,13 @@
+
+@media (max-width: 600px) {
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 5%;
+        font-size: 10px;
+    }
+
+    
+
+}

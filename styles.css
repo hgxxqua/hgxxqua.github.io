@@ -1,0 +1,140 @@
+/* Общие стили для всей страницы */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Отключаем прокрутку всей страницы */
+}
+
+/* Шапка */
+#header {
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#nick {
+    padding: 20px;
+}
+
+/* Основной контейнер */
+#main {
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    height: calc(100vh - 50px); /* Высота экрана минус шапка */
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+/* Левый блок */
+#left {
+    width: 20%; /* Фиксированная ширина */
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+#text-left {
+    font-size: xx-large;
+}
+
+/* Контейнер для скролла */
+.scroll-container {
+    flex: 1;
+    overflow-y: auto; /* Включаем скролл */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Скрытие скроллбара */
+.scroll-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Карточки в левом блоке */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-card {
+    border-radius: 10px;
+    border: 2px solid rgb(51, 51, 51);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(51, 51, 51);
+    
+}
+
+.card-img {
+    height: 30%;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+/* Правый блок */
+#right-container {
+    flex: 1; /* Занимает всё оставшееся пространство */
+    padding: 20px;
+    color: white;
+    overflow-y: auto; /* Включаем скролл */
+}
+
+/* Карточки в правом блоке */
+.r-card {
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+    width: 25%;
+    height: 30%;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.r-card-img {
+    width: 80%;
+    max-width: 300px; /* Ограничиваем ширину изображения */
+    border-radius: 10px;
+}
+
+.r-card-text {
+    margin-top: 10px;
+}
+
+.r-card-text a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.r-card-text a:hover {
+    text-decoration: underline;
+}
